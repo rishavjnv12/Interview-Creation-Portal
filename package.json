@@ -1,0 +1,22 @@
+{
+  "name": "interview_creation_portal",
+  "version": "1.0.0",
+  "description": "A simple app where admins can create interviews by selecting participants",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rishav Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "-": "^0.0.1",
+    "express": "^4.17.1",
+    "g": "^2.0.1",
+    "hbs": "^4.1.2",
+    "mongodb": "^3.6.9",
+    "mongoose": "^5.12.13",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5 style="font-size: 400%;" style="text-align: center;">Candidate's List</h5>
+    <ul>
+        {{#each array}}   
+        <li>
+            <div>
+                <h4 class="username">{{this.username}}</h4> <h4 class="name">{{this.name}}</h4>
+                <button type="text" class="schedule">Schedule</button>
+            </div>
+        </li>  
+        {{/each}}
+    </ul>
+    
+</body>
+    <script src="js/users.js" charset="utf-8"></script>
+</html>
