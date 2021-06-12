@@ -15,7 +15,7 @@ app.set("views", path.join(__dirname, "./templates/views"));
 app.use(express.static(publicDirectoryPath));
 
 // Database Connection
-mongoose.connect("mongodb://127.0.0.1:27017/interview-creation", {
+mongoose.connect("mongodb+srv://rishavjnv12:rishavjnv12@cluster0.vlycn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
@@ -133,6 +133,10 @@ app.post("/interview",async (req,res)=>{
 			})
 		})
 	}
+})
+
+app.get('/',async (req,res)=>{
+	await res.render('index')
 })
 
 
